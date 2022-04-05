@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do list</title>
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="interface" id="interface">
+    <input class="interfaceInput" id="interfaceInput" placeholder="Enter your task" type="text" onkeyup="addTaskByEnter(event)"/>
+    <a class="buttons" onclick="addToArray(), addToIndex()">ADD</a>
+    <a class="buttons" id="buttons" onmouseover="ButtonsAppearance()">Buttons</a>
+    <div class="interfaceButtons" id="InterfaceButtons">
+    </div>
+</div>
+<div class="tasks" id="tasks"></div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #020241;
+    font-family: "fantasy", serif;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.interface {
+    -webkit-user-select: none;
+    display: flex;
+    background-color: #00005e;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 300px 5px #010023;
+    z-index: 1;
+}
+
+.interfaceButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.interfaceInput {
+    font-size: 200%;
+    background-color: #0437be;
+    color: white;
+    width: 68%;
+    margin: 9px 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.buttons {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    background-color: #0437be;
+    font-size: 115%;
+    color: #ffffff;
+    margin-top: 8px;
+    margin-right: 20px;
+}
+
+.animation {
+    animation-name: animation;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animationReverse {
+    animation-direction: reverse;
+    animation-name: animation;
+    animation-iteration-count: 1;
+    animation-duration: 0.55s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation {
+    from {
+        opacity: 0;
+        margin-bottom: 100px;
+    }
+    to {
+        opacity: 1;
+        margin-bottom: 0px;
+    }
+
+}
+
+
+::placeholder {
+    color: white;
+    font-size: 80%;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #020241;;
+    width: 100%;
+}
+
+.task {
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 30px;
+    width: 70%;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.nameTask {
+    margin: 15px;
+    font-size: 150%;
+    background-color: white;
+    word-break: break-all;
+}
+
+.taskButtons {
+    -webkit-user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.taskButtons a {
+    cursor: pointer;
+    font-size: 200%;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    z-index:    4;
+    background-color: #0437be;
+    width: 150px;
+    height:40px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.date{
+    color: #002156;
+    font-size: 160%;
+    margin: 13px;
+}
